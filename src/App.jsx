@@ -9,7 +9,7 @@ import IconoNuevoGasto from './img/nuevo-gasto.svg'
 
 function App() {
   const [gastos, setGastos] = useState(
-    JSON.parse(localStorage.getItem('gastos')) || []
+    JSON.parse(localStorage.getItem('gastos')) === null && []
   )
 
   const [presupuesto, setPresupuesto] = useState(
